@@ -7,7 +7,7 @@ var started = false;
 
 var level = 0;
 
-$("#level-heading").click(function(event) {
+$(document).keypress(function(event) {
     if (!started) {
         nextSequence();
         started = true;
