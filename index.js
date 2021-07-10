@@ -7,13 +7,15 @@ var started = false;
 
 var level = 0;
 
-$(document).keypress(function(event) {
+$(document).on("touchstart", function(event) {
     if (!started) {
         nextSequence();
         started = true;
     }
 
 });
+
+
 
 $(".btn").click(function() {
     var userChosenColor = this.id;
